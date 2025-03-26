@@ -1,11 +1,10 @@
 {
+  "channel_defaults": {},
   "server": {
-    "debug": true,
+    "debug": false,
     "http_debug": false,
     "http_demo": true,
     "http_dir": "web",
-    "http_login": "demo",
-    "http_password": "demo",
     "http_port": ":8083",
     "https": false,
     "https_auto_tls": false,
@@ -17,22 +16,142 @@
     "log_level": "debug",
     "rtsp_port": ":5541",
     "token": {
-      "backend": "http://127.0.0.1/test.php"
+      "backend": "http://127.0.0.1/test.php",
+      "enable": false
     },
-    "defaults": {
-      "audio": true
-    }
+    "webrtc_port_max": 30000,
+    "webrtc_port_min": 20000
   },
   "streams": {
-    "27aec28e-6181-4753-9acd-0456a75f0289": {
+    "burger_camera_1": {
+      "name": "Burger Place - Camera 1",
       "channels": {
         "0": {
-          "url": "rtmp://171.25.232.10/12d525bc9f014e209c1280bc0d46a87e",
-          "debug": false,
-          "audio": true
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30556/cam/realmonitor?channel=1&subtype=0"
+        },
+        "1": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30556/cam/realmonitor?channel=1&subtype=1"
         }
-      },
-      "name": "111111111"
+      }
+    },
+    "burger_camera_2": {
+      "name": "Burger Place - Camera 2",
+      "channels": {
+        "0": {
+          "on_demand": true,
+          "url": "rtsp://admin:Tcf87159458@206.42.23.124:30561/cam/realmonitor?channel=1&subtype=0"
+        },
+        "1": {
+          "on_demand": true,
+          "url": "rtsp://admin:Tcf87159458@206.42.23.124:30561/cam/realmonitor?channel=1&subtype=1"
+        }
+      }
+    },
+    "burger_camera_3": {
+      "name": "Burger Place - Camera 3",
+      "channels": {
+        "0": {
+          "on_demand": true,
+          "url": "rtsp://admin:Tcf87159458@206.42.23.124:30562/cam/realmonitor?channel=1&subtype=0"
+        },
+        "1": {
+          "on_demand": true,
+          "url": "rtsp://admin:Tcf87159458@206.42.23.124:30562/cam/realmonitor?channel=1&subtype=1"
+        }
+      }
+    },
+    "burger_camera_4": {
+      "name": "Burger Place - Camera 4",
+      "channels": {
+        "0": {
+          "on_demand": true,
+          "url": "rtsp://admin:Tcf87159458@206.42.23.124:30563/cam/realmonitor?channel=1&subtype=0"
+        },
+        "1": {
+          "on_demand": true,
+          "url": "rtsp://admin:Tcf87159458@206.42.23.124:30563/cam/realmonitor?channel=1&subtype=1"
+        }
+      }
+    },
+    "burger_camera_5": {
+      "name": "Burger Place - Camera 5",
+      "channels": {
+        "0": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30559/cam/realmonitor?channel=1&subtype=0"
+        },
+        "1": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30559/cam/realmonitor?channel=1&subtype=1"
+        }
+      }
+    },
+    "burger_camera_6": {
+      "name": "Burger Place - Camera 6",
+      "channels": {
+        "0": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30558/cam/realmonitor?channel=1&subtype=0"
+        },
+        "1": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30558/cam/realmonitor?channel=1&subtype=1"
+        }
+      }
+    },
+    "burger_camera_7": {
+      "name": "Burger Place - Camera 7",
+      "channels": {
+        "0": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30557/cam/realmonitor?channel=1&subtype=0"
+        },
+        "1": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30557/cam/realmonitor?channel=1&subtype=1"
+        }
+      }
+    },
+    "burger_camera_8": {
+      "name": "Burger Place - Camera 8",
+      "channels": {
+        "0": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30555/cam/realmonitor?channel=1&subtype=0"
+        },
+        "1": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30555/cam/realmonitor?channel=1&subtype=1"
+        }
+      }
+    },
+    "burger_camera_9": {
+      "name": "Burger Place - Camera 9",
+      "channels": {
+        "0": {
+          "on_demand": true,
+          "url": "rtsp://admin:Tcf87159458@206.42.23.124:30560/cam/realmonitor?channel=1&subtype=0"
+        },
+        "1": {
+          "on_demand": true,
+          "url": "rtsp://admin:Tcf87159458@206.42.23.124:30560/cam/realmonitor?channel=1&subtype=1"
+        }
+      }
+    },
+    "burger_camera_10": {
+      "name": "Burger Place - Camera 10",
+      "channels": {
+        "0": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30554/cam/realmonitor?channel=1&subtype=0"
+        },
+        "1": {
+          "on_demand": true,
+          "url": "rtsp://admin:Ta87159458@206.42.23.124:30554/cam/realmonitor?channel=1&subtype=1"
+        }
+      }
     }
   }
 }
